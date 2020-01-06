@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "gpt2web"
+version = "0.1.0"
+description = "A web-service offering GPT-2 transformations"
+
+license = "MIT"
+
+authors = [
+    "Nick Walton <unknown@example.com>",
+    "Dustin Lacewell <dlacewell@gmail.com>",
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/storybro/gpt2web"
+homepage = "https://github.com/storybro/gpt2web"
+
+keywords = ['gpt2', 'gpt-2']
+
+[tool.poetry.dependencies]
+python = ">=3.5 <3.8"  # Compatible python versions must be declared here
+numpy = "1.18.0"
+regex = "2019.12.20"
+func_timeout = "4.3.5"
+tensorflow = "1.15"
+cryptography = "~2.8"
+click = "7.0"
+click-config-file = "0.5.0"
+appdirs = "1.4.3"
+importlib_resources = "~1.0.2"
+pyngrok = "1.4.2"
+flask = "1.1.1"
+
+[tool.poetry.scripts]
+gpt2web = 'gpt2web:main'
+
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
